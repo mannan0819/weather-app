@@ -16,13 +16,15 @@ export default function Search(props) {
         });
     } catch (err) {
       setSearchRes(null);
-      console.log(err);
+      console.log("Bad Request");
     }
   };
 
   useEffect(() => {
     if (lookupVal.length >= 3) getWeather();
-    else setSearchRes([]);
+    else {
+      setSearchRes([]);
+    }
   }, [lookupVal]);
 
   return (

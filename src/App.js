@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Weather } from "./components/wather";
 

@@ -9,7 +9,7 @@ export function Weather() {
     setLocation(loc);
   };
   return (
-    <Box>
+    <Box m={2}>
       <Search setLoc={locationWrapper} />
       <Current loc={location} />
     </Box>
