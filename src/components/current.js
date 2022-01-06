@@ -11,7 +11,6 @@ export default function Current(props) {
       .then((response) => response.json())
       .then((data) => {
         setWeather(data);
-        console.log(data);
       })
       .catch((err) => {
         setWeather(null);
